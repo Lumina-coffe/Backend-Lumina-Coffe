@@ -50,7 +50,7 @@ exports.createTransaction = async (req, res) => {
                 first_name,
             },
             callbacks: {
-                finish: `http://localhost:5173/success-payment/${product_id}`,
+                finish: `https://lumina-coffee.vercel.app/success-payment/${product_id}`,
             },
         };
 
